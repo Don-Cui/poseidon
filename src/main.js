@@ -4,7 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from '../router/index.js'
 import Axios from 'axios'
+import 'vant/lib/index.css'
+import VueCompositionAPI from '@vue/composition-api'
 
+Vue.use(VueCompositionAPI)
 Vue.config.productionTip = false
 Axios.defaults.baseURL = '/api'
 
